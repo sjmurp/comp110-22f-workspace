@@ -2,5 +2,4 @@
 
 __author__ = "730549938"
 
-
 print("Hello, world. goodbye stranger")
