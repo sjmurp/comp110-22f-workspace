@@ -2,7 +2,7 @@
 
 __author__ = "730549938"
     
-x = 0    
+counter = 0    
 word = input("Enter a 5-character word: ")
 if len(word) < 5 or len(word) > 5:
     print("Error: Word must contain 5 characters")
@@ -17,26 +17,26 @@ print("Searching for " + letter + " in " + word)
 
 if word[0] == letter:
     print(letter + " found at index 0")
-    x+=1   
+    counter+=1   
 
 if word[1] == letter:
     print(letter + " found at index 1")
-    x+=1
+    counter+=1
 
 if word[2] == letter:
     print(letter + " found at index 2")
-    x+=1
+    counter+=1
 
 if word[3] == letter:
     print(letter + " found at index 3")
-    x+=1
+    counter+=1
 
 if word[4] == letter:
     print(letter + " found at index 4")
-    x+=1
+    counter+=1
 
-if x > 0:
-    print(str(x) + " instances of " + letter + " found in " + word)
+if counter > 0:
+    print(str(counter) + " instances of " + letter + " found in " + word)
 else:
     print("No instances of " + letter + " found in " + word)
 
